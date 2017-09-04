@@ -1,0 +1,8 @@
+{
+    "name": "magneion/php-composer",
+    "description": "cours sur composer",
+    "license": "UNLICENSED",
+    "require": {
+        "doctrine/dbal": "^2.5"
+    }
+}
