@@ -1,6 +1,11 @@
 <?php
-$db_host = "localhost";
-$db_user = "myuser";
-$db_password = "mypassword";
-$db_base = "mydatabase";
-?>
+$config = new \Doctrine\DBAL\Configuration();
+//..
+$connectionParams = array(
+    'dbname' => 'mydb',
+    'user' => 'user',
+    'password' => 'secret',
+    'host' => 'localhost',
+    'driver' => 'pdo_mysql',
+);
+$conn = \Doctrine\DBAL\DriverManager::getConnection($connectionParams, $config);

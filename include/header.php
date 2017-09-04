@@ -1,12 +1,4 @@
 <?php
-$config = new \Doctrine\DBAL\Configuration();
-include("config/db.php");
-$connection = new mysqli(
-  $db_host,
-  $db_user,
-  $db_password,
-  $db_base
-);
 
 ?>
 <!DOCTYPE html>
